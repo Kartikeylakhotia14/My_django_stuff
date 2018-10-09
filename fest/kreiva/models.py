@@ -13,7 +13,6 @@ class UserProfileInfo(models.Model):
 class UserPartiInfo(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     event = models.CharField(max_length=100)
-    sub_event = models.CharField(max_length=200)
 
     def __str__(self):
         return self.user
